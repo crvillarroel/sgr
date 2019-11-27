@@ -11,37 +11,86 @@
     <ion-slide>
       <img src="assets/img/earth.png" class="slide-image" />
       <h2 class="slide-title">
-        Bienvenido a 
-        <b>Sistema de Gestión de Residuo Municipales</b>
+        Bienvenido
+        <br>
+        <b>Gestión de Residuos Municipales</b>
       </h2>
       <p>
-        The
-        <b>ionic conference app</b> is a practical preview of the ionic framework in action, and a demonstration of proper code
-        use.
+        Integra al ciudadano, comercios y entidades minucupales en la gestión eficiente y sostenible de los residuos.
+        <br>
+        El ciudadano ganará Créditos Municipales (CMB) por participar.
+        <br><br>
+        <b><i>&gt;&gt;&gt; Deslice para ver más &gt;&gt;&gt;</i></b>
       </p>
     </ion-slide>
 
     <ion-slide>
       <img src="assets/img/ica-slidebox-img-2.png" class="slide-image" />
-      <h2 class="slide-title">What is Ionic?</h2>
+      <h2 class="slide-title">El Ciudadano</h2>
       <p>
-        <b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies
-        like HTML, CSS, and JavaScript.</p>
+        1 - Pancracio está en casa y va a tirar un brick de leche. Abre una nueva bolsa de basura y escanea el QR de la bolsa con la aplicación nueva para registrar una nueva bolsa. En la aplicación se muestra el color del tipo de bolsa (residuos de papel y cartón, envases ligeros, materia orgánica, etc). En este caso se trata de envases ligeros. Y a partir de ese momento, se quedará como "activa" en la aplicación, junto al resto de otras bolsas de distintas clasificaciones de residuos que ha hecho.
+2 - A continuación tira en la bolsa el brick de leche vacío, pero antes escanea el código de barras del brick. La pantalla se ilumina de verde indicando que es válido para incluir en esa bolsa. Además se muestra el valor del ahorro al medio ambiente (en CO2 eq)
+3- Durante el día, Pancracio continúa tirando residuos en la bolsa registrada, y en cada ocasión escanea los códigos de barra de los productos. Para algunas piezas que tira que son más importantes en tamaño, pero que no tienen códigos de barras asociados, puede escanear unos códigos genéricos que están en un calendario del año que le ha regalado el Ayuntamiento. Otras partes simplemente las deposita sin escanear porque sabe que están correctamente clasificadas. 
+3a- Si no se puede identificar algún código de barras en un producto, simplemente indica que desea crear un nuevo código y escoge una de las categorías que se muestran en la pantalla y así queda registrado para una siguiente vez y para todos los usuarios de la aplicación.
+
+4- En las noches, Pancracio baja la basura al contenedor. Cada una de las bolsas se registra que se ha lanzado en un contenedor, realizando una lectura del QR del contenedor mismo con una simple acción en la aplicación móvil. Esto eliminará las bolsas como activas de la aplicación.
+5- Cuando el sistema municipal de gestión de residuos valide que sus bolsas han sido procesadas correctamente, se le agregarán automáticamente Créditos Municipales en su wallet
+
+6- Pancracio desea tirar unos muebles y restos de madera de la obra que ha realizado recientemente en casa. Lo indica en la aplicación y le toma una foto. El motor de IA identifica que se trata de muebles y restos varios y genera una solicitud de recogida al ayuntamiento. En la pantalla aparece un día, un horario y un sitio donde puede dejarlos o si se realizará una recogida a domicilio. Cuando se ha confirma la cita, la aplicación solicita el QR asociado a estos residuos, y Pancracio toma una de las pegatinas de residuos voluminosos que le han dado en el ayuntamiento para estos casos, y cuando lo ha pegado de manera visible en uno de los muebles, lo escanea y cierra la solicitud.
+7- El día indicado, Pancracio deja los muebles en el sitio convenido y confirma también con una simple acción en el móvil que ya pueden ser recogidos.
+8- Cuando llega el vehículo de recogida, el empleado hace una foto a los desechos para que el motor de AI le confirme que son los residuos indicados, escanea el QR pegado en el mueble para confirmar la recogida y se lleva las piezas al punto de procesamiento. 
+9-  Cuando el sistema municipal de gestión de residuos valide que los residuos han sido procesadas correctamente, se le agregarán automáticamente Créditos Municipales en su wallet
+        <br><br>
+        <b><i>&gt;&gt;&gt; Deslice para ver más &gt;&gt;&gt;</i></b>
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <h2 class="slide-title">El Comercio</h2>
+      <p>
+        El pequeño comercio se comporta aproximadamente igual que un ciudadano con la diferencia que registra volúmenes de residuos por tipos y fracciones, y en caso de que se ocupe él mismo del transporte, procesamiento parcial o completo, selección y  transporte hasta el Sistema Municipal de Gestión de residuos, va realizando registros con la aplicación móvil durante todo el ciclo. En estos casos, los QR de empresas son distintos a los de los ciudadanos y son usados para identificar el tipo de residuo y la empresa misma.
+      
+        <br><br>
+        <b><i>&gt;&gt;&gt; Deslice para ver más &gt;&gt;&gt;</i></b>
+      </p>
     </ion-slide>
 
     <ion-slide>
       <img src="assets/img/ica-slidebox-img-3.png" class="slide-image" />
-      <h2 class="slide-title">What is Ionic Appflow?</h2>
+      <h2 class="slide-title">El Validador</h2>
       <p>
-        <b>Ionic Appflow</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally new
-        level of app development agility to mobile dev teams.</p>
+        1- Por cada QR que llega a los centros de o bien en las bolsas recogidas en los contenedores por fracciones, o la de los residuos voluminosos, se realiza una confirmación positiva o negativa, basado en los mismos criterios de evaluación aplicados para la selección y separación (ej: las bolsas deben contener únicamente residuos compatibles con el tipo de bolsas, es decir: vidrio en la bolsa de vidrios, orgánicos en la de orgánicos, etc). De esa forma, los ciudadanos recibirán Créditos Municipales por las confirmaciones positivas o pagarán el costo de la recogida y la gestión en Créditos Municipales.
+2- Otras partes que forman el sistema y que actúan como validadores parciales son:
+Vehículos de recogidas (leen los códigos de contenedores y otros sitios físicos de recogidas. Validan las códigos de ciudadanos en las recogidas a domicilios)
+Contenedores por fracciones 
+Puntos verdes
+Centros o etapas intermedias de separación, antes del procesado final
+
+IDEA: Por cada confirmación completada (positiva o negativa), una cantidad determinada de Créditos Municipales se asignarán al Centro en concreto que realiza la confirmación. Otra cantidad se asignará también al Ayuntamiento del municipio.
+      
+        <br><br>
+        <b><i>&gt;&gt;&gt; Deslice para ver más &gt;&gt;&gt;</i></b>
+      </p>
     </ion-slide>
 
     <ion-slide>
-      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image" />
-      <h2 class="slide-title">Ready to Play?</h2>
+      <h2 class="slide-title">El Ayuntamiento del Municipio</h2>
+      <p>
+        1- Expide las bolsas con QR y las pegatinas que los ciudadanos pueden comprar o recibir.
+2-Promueve eventos (conciertos, actividades culturales, deportivas y sociales) donde se aplicarán descuentos en Créditos Municipales
+3-Hace reducción de impuestos y tasas municipales acorde al valor de los Créditos Municipales para ciudadanos y empresas
+4-Otorga certificaciones de cumplimiento de normativas de reciclaje y gestión de residuos para mejorar la reputación de sus negocios locales y promover el comportamiento positivo
+5- Algunas otras empresas pueden generar bolsas, por ejemplo: supermercados que puedan imprimir sus propias bolsas con códigos, compatibles con la plataforma
+        
+          <br><br>
+        <b><i>&gt;&gt;&gt; Deslice para ver más &gt;&gt;&gt;</i></b>
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <h2 class="slide-title">¿Estás listo para empezar?</h2>
       <ion-button fill="clear" (click)="startApp()">
-        Continue
+        Continuar
         <ion-icon slot="end" name="arrow-forward"></ion-icon>
       </ion-button>
     </ion-slide>
