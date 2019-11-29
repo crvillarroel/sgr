@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { QRScanner } from '@ionic-native/qr-scanner/ngx';
+
 import { IonicModule } from '@ionic/angular';
 import { IonicStorageModule } from '@ionic/storage';
 
@@ -12,6 +14,8 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   imports: [
@@ -26,7 +30,12 @@ import { FormsModule } from '@angular/forms';
     })
   ],
   declarations: [AppComponent],
-  providers: [InAppBrowser, SplashScreen, StatusBar],
+  providers: [
+    InAppBrowser, 
+    SplashScreen, 
+    StatusBar,
+    QRScanner
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
